@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Traverse Area District Library</title>
+
+	<!--<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />-->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+	<link rel="stylesheet" href="css/themes/basic.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var initialLocation = new google.maps.LatLng(44.714917,-85.556751);
+			var myOptions = {
+				zoom: 11,
+				center: initialLocation,
+				disableDefaultUI: true,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+			var marker = new google.maps.Marker({
+				position: initialLocation,
+				map: map
+			});
+
+		});
+	</script>   
+
+</head>
+
+<body> 
+
+<div data-role="page" class="type-interior" data-theme="c" data-add-back-btn="true">
+	<div data-role="header" data-theme="a">
+		<p style="text-align:center;">TADL &raquo; East Bay</p>
+		<a href="/beta/" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<div class="img_shadow" style="padding:4px;">
+			<div id="map_canvas" style="width:100%; height:305px;"></div>
+		</div>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="a">
+		<p style="font-size:0.6em; text-align:center;">Traverse Area District Library - Beta Mobile Site</p>
+	</div><!-- /footer -->
+</div> 
+
+
+</body>
+</html>
+

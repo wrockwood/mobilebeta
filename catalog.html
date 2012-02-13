@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Traverse Area District Library</title>
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/themes/basic.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+</head>
+
+<body> 
+
+<div data-role="page" class="type-interior" data-theme="c" data-add-back-btn="true">
+	<div data-role="header" data-theme="a">
+		<p style="text-align:center;">TADL &raquo; Catalog</p>
+		<a href="/beta/" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-right jqm-home">Home</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+
+		<h2>Search by Keyword</h2>
+		<form action="http://catalog.tadl.org/opac/en-US/skin/tadl/xml/rresult.xml" method="get">
+		<input type="text" name="t" />
+		<input type="hidden" name="l" value="22" />
+		<input type="hidden" name="rt" value="keyword" />
+		<input type="hidden" name="tp" value="keyword" />
+		<input type="hidden" name="d" value="1" />
+		<input type="submit" value="Search" data-icon="search" />
+		<p style="font-size:0.8em;">Note: searching the catalog will take you away from our Mobile site. Use the "back" button to return to this page.</p>
+
+	</div><!-- /content -->
+
+	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="a">
+		<p style="font-size:0.6em; text-align:center;">Traverse Area District Library - Beta Mobile Site</p>
+	</div><!-- /footer -->
+</div> 
+
+
+</body>
+</html>
+
