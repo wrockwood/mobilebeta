@@ -22,6 +22,8 @@
 		<gap:platform name="blackberry" project="widgets"/>
 	</gap:platforms>
 
+	<gap:splash src="default.png" />
+
 	<icon src="8bit-tadl-icon.png" gap:role="default" />
 
     <!-- <gap:splash src="weirdo.png" /> -->
