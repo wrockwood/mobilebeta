@@ -21,14 +21,7 @@
 	</div><!-- /header -->
 
 	<div data-role="content">
-		<ul data-role="listview" data-inset="true" data-theme="c" data-divider-theme="a">
-			<li><a href="locations.html" data-transition="slide">Visit a Library</a></li>
-			<li><a href="catalog.html" data-transition="slide">Search the Catalog</a></li>
-			<li><a href="events.html" data-transition="slide">Upcoming Events</a></li>
-			<li><a href="help.html" data-transition="slide">Help</a></li>
-			<li><a href="http://www.tadl.org">Full Website</a></li>
-			<li><a href="foo.php" data-tansition="slide">Test</a></li>
-		</ul>
+		<?php print "foo"; ?>
 	</div><!-- /content -->
 
 	<div data-role="footer" data-id="myfooter" data-position="fixed" data-theme="a">
